@@ -1,6 +1,6 @@
 create table historico(
 	id_historico int auto_increment primary key,
-	id_campos_ri int,
+	id_tabela int,
 	usuario varchar(50),
 	data_alteracao datetime,
 	campo_alterado varchar(50),
