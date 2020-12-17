@@ -7,4 +7,4 @@ historico_nome_coluna.sql
     (As informações que fazem o Update vêm de outra tabela que recebe um input 'load data infile' txt) 
 
 input_txt.sql
-  - Realiza a atualização dos registros da tabela que já estão na tabela_temp(que recebe o txt) e realiza em colunas específicas (40 do total de 226)
+  - Realiza Update dos registros da tabela que já estão na tabela_temp(que recebe o txt) e realiza em colunas específicas (40 do total de 226)
