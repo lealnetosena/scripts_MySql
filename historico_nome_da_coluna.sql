@@ -20,24 +20,24 @@ FOR EACH ROW
 BEGIN	
 	SET @valor_old =
 	(case 
-		WHEN NEW.coluna1 != OLD.coluna1 THEN NEW.coluna1
-		WHEN NEW.coluna2 != OLD.coluna2 THEN NEW.coluna2
-		WHEN NEW.coluna3 != OLD.coluna3 THEN NEW.coluna3
-		WHEN NEW.coluna4 != OLD.coluna4 THEN NEW.coluna4
-		WHEN NEW.coluna5 != OLD.coluna5 THEN NEW.coluna5
-		WHEN NEW.coluna6 != OLD.coluna6 THEN NEW.coluna6
-		WHEN NEW.coluna7 != OLD.coluna7 THEN NEW.coluna7
-	END);
-
-	SET @valor_new =
-	(case 
 		WHEN NEW.coluna1 != OLD.coluna1 THEN OLD.coluna1
 		WHEN NEW.coluna2 != OLD.coluna2 THEN OLD.coluna2
 		WHEN NEW.coluna3 != OLD.coluna3 THEN OLD.coluna3
 		WHEN NEW.coluna4 != OLD.coluna4 THEN OLD.coluna4
 		WHEN NEW.coluna5 != OLD.coluna5 THEN OLD.coluna5
 		WHEN NEW.coluna6 != OLD.coluna6 THEN OLD.coluna6
-		WHEN NEW.coluna7 != OLD.coluna7 THEN OLD.coluna7	
+		WHEN NEW.coluna7 != OLD.coluna7 THEN OLD.coluna7
+	END);
+
+	SET @valor_new =
+	(case 
+		WHEN NEW.coluna1 != OLD.coluna1 THEN NEW.coluna1
+		WHEN NEW.coluna2 != OLD.coluna2 THEN NEW.coluna2
+		WHEN NEW.coluna3 != OLD.coluna3 THEN NEW.coluna3
+		WHEN NEW.coluna4 != OLD.coluna4 THEN NEW.coluna4
+		WHEN NEW.coluna5 != OLD.coluna5 THEN NEW.coluna5
+		WHEN NEW.coluna6 != OLD.coluna6 THEN NEW.coluna6
+		WHEN NEW.coluna7 != OLD.coluna7 THEN NEW.coluna7	
 	END);
 
 	SET @campo =
